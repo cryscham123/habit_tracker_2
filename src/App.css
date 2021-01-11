@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+}
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-column-gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 20px 0;
+  background-color: wheat;
+}
+.nav__title {
+  font-size: 26px;
+  font-weight: 600;
+}
+.count {
+  width: 26px;
+  height: 26px;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: green;
   color: white;
+  text-align: center;
+  border-radius: 50%;
 }
-
-.App-link {
-  color: #61dafb;
+.fa-leaf {
+  font-size: 26px;
+  color: green;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputForm {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.input__label {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+#input__input {
+  padding: 5px 10px;
+  font-size: 15px;
+  outline: none;
+}
+.input__Btn {
+  background-color: green;
+  font-size: 15px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+}
+.input__Btn:hover {
+  color: black;
+}
+.habits {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-row-gap: 10px;
+  justify-content: center;
+}
+.habit {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-column-gap: 10px;
+  padding: 10px 20px;
+  align-items: center;
+}
+.habit__status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.habit__name {
+  font-size: 23px;
+  font-weight: 600;
+  width: 253px;
+}
+.habit__Btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  align-items: center;
+}
+.controlBtn {
+  width: 23px;
+  height: 23px;
+  padding: 3px;
+  background-color: #ffa801;
+  color: white;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+}
+.controlBtn:hover {
+  color: black;
+}
+.deleteBtn {
+  font-size: 23px;
+  color: #808e9b;
+  transition: color 0.3s ease-in-out;
+}
+.deleteBtn:hover {
+  color: red;
+}
+.resetBtn {
+  background-color: green;
+  font-size: 15px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+  justify-self: center;
+  margin: 20px 0;
+}
+.resetBtn:hover {
+  color: black;
 }
