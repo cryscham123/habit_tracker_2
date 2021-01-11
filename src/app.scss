@@ -80,7 +80,9 @@ body {
   display: grid;
   grid-auto-rows: min-content;
   grid-row-gap: 10px;
-  justify-content: center;
+  justify-self: center;
+  height: 68vh;
+  overflow: auto;
 }
 .habit {
   display: grid;

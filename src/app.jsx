@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './app.css';
+import './app.scss';
 import Nav from "./components/nav";
 import Input from "./components/input";
 import Habits from "./components/habits";
